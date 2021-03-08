@@ -1,0 +1,16 @@
+.title-container {
+  display: flex;
+  background-color:#8F8A9B;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  color: #FFF
+}
+
+.subtitle {
+  color: #FFF
+}
+

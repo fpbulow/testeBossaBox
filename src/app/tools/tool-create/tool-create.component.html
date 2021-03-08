@@ -1,0 +1,26 @@
+<form class="container col-md-5">
+  <div class="form-group">
+    <label for="toolTitle"> Title</label>
+    <input type="text" class="form-control" id="toolTitle" [(ngModel)]="tool.title" name="title">
+  </div>
+
+  <div class="form-group">
+    <label for="toolLink"> Link</label>
+    <input type="text" class="form-control" id="toolLink" [(ngModel)]="tool.link" name="link">
+  </div>
+
+  <div class="form-group">
+    <label for="toolDescription"> Description</label>
+    <input type="text" class="form-control" id="toolDescription" [(ngModel)]="tool.description" name="description">
+  </div>
+
+  <div class="form-group">
+    <label for="toolTags">Tags</label>
+    <input type="text" class="form-control" id="toolTags" [(ngModel)]="tool.tags" name="tags">
+  </div>
+
+  <div class="btn-group mr-2">
+    <button (click)="createTool()" class="btn btn-primary">Create Tool</button>
+    <button (click)="cancel()" class="btn btn-warning">Cancel</button>
+  </div>
+</form>

@@ -5,7 +5,16 @@
   "projects": {
     "testeBossaBox": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "spec": false,
+          "skipTests": true
+        },
+        "@schematics/angular:service": {
+          "spec": false,
+          "skipTests": true
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -119,6 +128,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "testeBossaBox"
 }

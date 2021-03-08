@@ -1,0 +1,20 @@
+.content {
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.card {
+  width: 40rem;
+  border-bottom-width: 5px;
+  margin-top: 30px;
+}
+
+.search {
+  margin-bottom: 10px;
+}
+
+.cardTitle {
+  font-size: 25px;
+  text-decoration: underline;
+}

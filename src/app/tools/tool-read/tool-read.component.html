@@ -1,0 +1,29 @@
+<div class="container content">
+
+  <div class="toolbar">
+    <div class="search">
+      <input type="text" class="input" placeholder="pesquisa!">
+    </div>
+
+
+    <a class="btn btn-primary" [routerLink]="['/create']">add item</a>
+  </div>
+
+  <div *ngFor="let tool of tools" class="card">
+    <div class="card-body">
+      <a class="cardTitle" href="{{ tool.link }}" target="_blank">
+        {{ tool.title }}
+      </a>
+
+      <p class="card-text">
+        {{ tool.description }}
+      </p>
+      <p class="text-left">
+        {{ tool.tags }}
+      </p>
+      <a class="btn btn-danger" [routerLink]="['/delete', tool.id]">Remove Item</a>
+    </div>
+  </div>
+
+
+</div>
